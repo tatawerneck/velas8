@@ -1,0 +1,1111 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 22px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff83aa 0%,
+            #f76d9b 50%,
+            #ffabc4 100%
+        );
+}
+
+
+/* =====================================================
+   CONTAINER PRINCIPAL
+===================================================== */
+
+.cadastro-container {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    min-height: 650px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: #fffaf5;
+
+    box-shadow:
+        0 25px 60px
+        rgba(0, 0, 0, 0.28);
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+
+    width: 220px;
+
+    min-width: 220px;
+
+    min-height: 650px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 30px 10px 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #06183d 0%,
+            #071b45 60%,
+            #0b2454 100%
+        );
+
+    color: white;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+
+.logo-icon {
+
+    width: 62px;
+    height: 62px;
+
+    margin: 0 auto 8px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1.5px solid #d49a51;
+
+    border-radius: 50%;
+
+    font-size: 27px;
+
+    color: #e2ad6c;
+
+    background: #071a45;
+}
+
+
+.logo h1 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #f3b6c8;
+}
+
+
+.logo p {
+
+    margin-top: 6px;
+
+    font-size: 7px;
+
+    letter-spacing: 2.8px;
+
+    color: #d8a76a;
+}
+
+
+.logo-decoration {
+
+    margin-top: 7px;
+
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    color: #d59a54;
+}
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+.menu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+.menu-item {
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 14px;
+
+    border-radius: 9px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition: 0.25s;
+}
+
+
+.menu-item span {
+
+    width: 20px;
+
+    text-align: center;
+
+    font-size: 16px;
+}
+
+
+.menu-item:hover {
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    transform: translateX(2px);
+}
+
+
+/* ITEM ATIVO */
+
+.menu-item.active {
+
+    background:
+        linear-gradient(
+            90deg,
+            #ee3e77,
+            #e95186
+        );
+
+    box-shadow:
+        0 5px 15px
+        rgba(238, 62, 119, 0.25);
+}
+
+
+/* =====================================================
+   PARTE INFERIOR DA SIDEBAR
+===================================================== */
+
+.sidebar-bottom {
+
+    margin-top: auto;
+
+    padding: 0 12px;
+
+    position: relative;
+}
+
+
+.linha {
+
+    width: 100%;
+
+    height: 1px;
+
+    margin-bottom: 17px;
+
+    background: #a66e3c;
+}
+
+
+.vela {
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+
+.sidebar-bottom p {
+
+    font-family: Georgia, serif;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+    color: #f5d8b9;
+}
+
+
+.sidebar-bottom span {
+
+    color: #ed4b7f;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   CONTEÚDO
+===================================================== */
+
+.conteudo {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 35px 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf5 0%,
+            #fff3ed 100%
+        );
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.cabecalho {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+.cabecalho h2 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 29px;
+
+    font-weight: 400;
+
+    color: #071a45;
+}
+
+
+.cabecalho p {
+
+    margin-top: 4px;
+
+    color: #8f7777;
+
+    font-family: Georgia, serif;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   ÁREA DO CADASTRO
+===================================================== */
+
+.cadastro-area {
+
+    min-height: 525px;
+
+    display: flex;
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.cadastro-card {
+
+    flex: 1;
+
+    max-width: 570px;
+
+    padding: 30px 38px;
+
+    border-radius: 18px;
+
+    border: 1px solid #f3d7d7;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf9,
+            #fff5ef
+        );
+
+    box-shadow:
+        0 10px 28px
+        rgba(82, 35, 50, 0.08);
+}
+
+
+/* =====================================================
+   ORNAMENTO
+===================================================== */
+
+.ornamento {
+
+    margin-bottom: 8px;
+
+    color: #d08a3b;
+
+    font-family: Georgia, serif;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.cadastro-card h3 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 30px;
+
+    font-weight: 400;
+
+    color: #071a45;
+}
+
+
+.descricao {
+
+    margin-top: 5px;
+
+    margin-bottom: 22px;
+
+    color: #8d7676;
+
+    font-family: Georgia, serif;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   CAMPOS
+===================================================== */
+
+.campo {
+
+    margin-bottom: 14px;
+}
+
+
+.campo label {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #071a45;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   INPUT CONTAINER
+===================================================== */
+
+.input-container {
+
+    width: 100%;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 0 12px;
+
+    border: 1px solid #f0ced1;
+
+    border-radius: 10px;
+
+    background: #fff8f4;
+
+    transition: 0.25s;
+}
+
+
+.input-container:hover {
+
+    border-color: #e9a0b3;
+}
+
+
+.input-container:focus-within {
+
+    border-color: #e84f80;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(232, 79, 128, 0.10);
+}
+
+
+/* =====================================================
+   ÍCONE
+===================================================== */
+
+.icone {
+
+    min-width: 20px;
+
+    color: #df537c;
+
+    font-size: 16px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.input-container input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #071a45;
+
+    font-size: 12px;
+}
+
+
+.input-container input::placeholder {
+
+    color: #c7959f;
+}
+
+
+/* =====================================================
+   BOTÃO
+===================================================== */
+
+.btn-cadastrar {
+
+    width: 100%;
+
+    height: 46px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #071a45,
+            #0c285b
+        );
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn-cadastrar:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(7, 26, 69, 0.25);
+
+    background:
+        linear-gradient(
+            90deg,
+            #0c285b,
+            #14346e
+        );
+}
+
+
+/* =====================================================
+   RODAPÉ DO CARD
+===================================================== */
+
+.rodape-card {
+
+    margin-top: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.rodape-card span {
+
+    color: #d59a54;
+
+    font-size: 11px;
+}
+
+
+.rodape-card p {
+
+    color: #a08383;
+
+    font-family: Georgia, serif;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   ÁREA DECORATIVA
+===================================================== */
+
+.decoracao {
+
+    width: 280px;
+
+    min-width: 280px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #071a45,
+            #0b2b61
+        );
+
+    box-shadow:
+        0 10px 28px
+        rgba(7, 26, 69, 0.15);
+}
+
+
+/* =====================================================
+   BRILHOS
+===================================================== */
+
+.brilho {
+
+    position: absolute;
+
+    color: #e6ad6a;
+
+    font-size: 18px;
+}
+
+
+.brilho-1 {
+
+    top: 30px;
+    left: 35px;
+}
+
+
+.brilho-2 {
+
+    top: 80px;
+    right: 35px;
+
+    font-size: 12px;
+}
+
+
+.brilho-3 {
+
+    bottom: 50px;
+    left: 45px;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   ÁREA DA IMAGEM
+===================================================== */
+
+.imagem-produto {
+
+    width: 170px;
+    height: 170px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #d59a54;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #19376d 0%,
+            #071a45 70%
+        );
+
+    box-shadow:
+        0 10px 35px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   VELA DECORATIVA
+===================================================== */
+
+.vela-grande {
+
+    font-size: 72px;
+
+    filter:
+        drop-shadow(
+            0 8px 8px
+            rgba(0,0,0,0.25)
+        );
+}
+
+
+/* =====================================================
+   TÍTULO DECORATIVO
+===================================================== */
+
+.decoracao h4 {
+
+    margin-top: 25px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 29px;
+
+    font-weight: 400;
+
+    color: #f3b6c8;
+}
+
+
+.decoracao p {
+
+    margin-top: 8px;
+
+    text-align: center;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-style: italic;
+
+    font-size: 17px;
+
+    line-height: 1.35;
+
+    color: white;
+}
+
+
+.decoracao p span {
+
+    color: #ef5d88;
+}
+
+
+/* =====================================================
+   LINHA DECORATIVA
+===================================================== */
+
+.decoracao-linha {
+
+    margin-top: 15px;
+
+    color: #d59a54;
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    body {
+
+        padding: 12px;
+
+    }
+
+
+    .cadastro-container {
+
+        min-height: auto;
+
+    }
+
+
+    .sidebar {
+
+        width: 190px;
+
+        min-width: 190px;
+
+    }
+
+
+    .conteudo {
+
+        padding: 30px 25px;
+
+    }
+
+
+    .decoracao {
+
+        width: 220px;
+
+        min-width: 220px;
+
+    }
+
+
+    .imagem-produto {
+
+        width: 140px;
+        height: 140px;
+
+    }
+
+
+    .vela-grande {
+
+        font-size: 58px;
+
+    }
+
+}
+
+
+/* =====================================================
+   TABLET / CELULAR
+===================================================== */
+
+@media (max-width: 750px) {
+
+    body {
+
+        align-items: flex-start;
+
+        padding: 10px;
+
+    }
+
+
+    .cadastro-container {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+
+    .sidebar {
+
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: auto;
+
+        padding: 25px 15px 20px;
+
+    }
+
+
+    .logo {
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .menu {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 5px;
+
+    }
+
+
+    .sidebar-bottom {
+
+        display: none;
+
+    }
+
+
+    .conteudo {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .cadastro-area {
+
+        flex-direction: column;
+
+    }
+
+
+    .cadastro-card {
+
+        max-width: 100%;
+
+    }
+
+
+    .decoracao {
+
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: 300px;
+
+    }
+
+
+    .imagem-produto {
+
+        width: 120px;
+
+        height: 120px;
+
+    }
+
+
+    .vela-grande {
+
+        font-size: 50px;
+
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 450px) {
+
+    body {
+
+        padding: 5px;
+
+    }
+
+
+    .cadastro-container {
+
+        border-radius: 15px;
+
+    }
+
+
+    .logo h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .menu {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .menu-item {
+
+        font-size: 10px;
+
+        padding: 0 8px;
+
+    }
+
+
+    .conteudo {
+
+        padding: 20px 12px;
+
+    }
+
+
+    .cabecalho h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    .cadastro-card {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .cadastro-card h3 {
+
+        font-size: 26px;
+
+    }
+
+
+    .decoracao {
+
+        min-height: 270px;
+
+    }
+
+}

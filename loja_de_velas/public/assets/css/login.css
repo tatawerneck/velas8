@@ -1,0 +1,715 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #07183d 0%,
+            #441372 45%,
+            #f25f89 100%
+        );
+
+}
+
+
+
+/* =====================================================
+   CONTAINER PRINCIPAL
+===================================================== */
+
+.login-container {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    min-height: 610px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: #fff;
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.35);
+
+}
+
+
+
+/* =====================================================
+   LADO ESQUERDO
+   AQUI FICA A IMAGEM
+===================================================== */
+
+.login-image {
+
+    width: 50%;
+
+    min-height: 610px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #071a3d;
+
+}
+
+
+
+/* =====================================================
+   IMAGEM DA LUMIÈRE
+===================================================== */
+
+.login-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+
+/* =====================================================
+   EFEITO ESCURO SOBRE A IMAGEM
+===================================================== */
+
+.login-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(4, 16, 40, 0.05),
+            rgba(4, 16, 40, 0.10)
+        );
+
+}
+
+
+
+/* =====================================================
+   LADO DIREITO
+===================================================== */
+
+.login-form {
+
+    width: 50%;
+
+    min-height: 610px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 55px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffaf7,
+            #fff3f1
+        );
+
+}
+
+
+
+/* =====================================================
+   CONTEÚDO DO FORMULÁRIO
+===================================================== */
+
+.form-content {
+
+    width: 100%;
+
+    max-width: 430px;
+
+}
+
+
+
+/* =====================================================
+   BOAS-VINDAS
+===================================================== */
+
+.welcome {
+
+    margin-bottom: 35px;
+
+}
+
+
+
+/* "Bem-vinda à" */
+
+.welcome > span {
+
+    display: block;
+
+    margin-bottom: 2px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+
+    color: #071a45;
+
+}
+
+
+
+/* Lumière */
+
+.welcome h1 {
+
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 55px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    color: #150763;
+
+}
+
+
+
+/* estrela */
+
+.welcome h1 b {
+
+    color: #e5a744;
+
+    font-size: 27px;
+
+    vertical-align: top;
+
+}
+
+
+
+/* subtítulo */
+
+.welcome p {
+
+    margin-top: 12px;
+
+    font-size: 15px;
+
+    color: #666;
+
+}
+
+
+
+/* coração */
+
+.welcome p span {
+
+    color: #e65382;
+
+    font-size: 17px;
+
+}
+
+
+
+/* =====================================================
+   GRUPO DO INPUT
+===================================================== */
+
+.input-group {
+
+    margin-bottom: 22px;
+
+}
+
+
+
+/* LABEL */
+
+.input-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #071a45;
+
+}
+
+
+
+/* =====================================================
+   CAIXA DO INPUT
+===================================================== */
+
+.input-box {
+
+    width: 100%;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 16px;
+
+    border-radius: 13px;
+
+    border: 1px solid #efc7cf;
+
+    background: #f8e5e6;
+
+    transition: 0.3s;
+
+}
+
+
+
+/* efeito quando clicar */
+
+.input-box:focus-within {
+
+    border-color: #da409f;
+
+    background: #fff;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(230, 83, 130, 0.10);
+
+}
+
+
+
+/* =====================================================
+   ÍCONE
+===================================================== */
+
+.input-icon {
+
+    color: #ce728b;
+
+    font-size: 19px;
+
+    min-width: 20px;
+
+}
+
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.input-box input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #071a45;
+
+    font-size: 14px;
+
+}
+
+
+
+/* placeholder */
+
+.input-box input::placeholder {
+
+    color: #c58c98;
+
+}
+
+
+
+/* =====================================================
+   BOTÃO MOSTRAR SENHA
+===================================================== */
+
+.show-password {
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    color: #b86d80;
+
+    font-size: 17px;
+
+    padding: 5px;
+
+}
+
+
+
+/* =====================================================
+   ESQUECEU A SENHA
+===================================================== */
+
+.forgot {
+
+    margin-top: 8px;
+
+    text-align: right;
+
+}
+
+
+
+.forgot a {
+
+    color: #071a45;
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+}
+
+
+
+.forgot a:hover {
+
+    color: #e65382;
+
+    text-decoration: underline;
+
+}
+
+
+
+/* =====================================================
+   BOTÃO ENTRAR
+===================================================== */
+
+.btn-login {
+
+    width: 100%;
+
+    height: 53px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 13px;
+
+    background: #071a45;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+}
+
+
+
+.btn-login:hover {
+
+    background: #102b63;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(7, 26, 69, 0.25);
+
+}
+
+
+
+/* =====================================================
+   BOTÃO CADASTRAR
+===================================================== */
+
+.btn-register {
+
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1.5px solid #e65382;
+
+    border-radius: 13px;
+
+    background: transparent;
+
+    color: #e65382;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+
+}
+
+
+
+.btn-register:hover {
+
+    background: #e653a9;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* =====================================================
+   TABLETS
+===================================================== */
+
+@media (max-width: 900px) {
+
+    body {
+
+        padding: 20px;
+
+    }
+
+
+    .login-container {
+
+        max-width: 850px;
+
+    }
+
+
+    .login-form {
+
+        padding: 40px;
+
+    }
+
+
+    .welcome h1 {
+
+        font-size: 45px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+
+        padding: 15px;
+
+    }
+
+
+    .login-container {
+
+        flex-direction: column;
+
+        max-width: 500px;
+
+    }
+
+
+    .login-image {
+
+        width: 100%;
+
+        height: 350px;
+
+        min-height: 350px;
+
+    }
+
+
+    .login-form {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 40px 30px;
+
+    }
+
+
+    .welcome h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .welcome > span {
+
+        font-size: 21px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   CELULARES PEQUENOS
+===================================================== */
+
+@media (max-width: 450px) {
+
+    body {
+
+        padding: 10px;
+
+    }
+
+
+    .login-container {
+
+        border-radius: 18px;
+
+    }
+
+
+    .login-image {
+
+        height: 280px;
+
+        min-height: 280px;
+
+    }
+
+
+    .login-form {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .welcome {
+
+        margin-bottom: 28px;
+
+    }
+
+
+    .welcome h1 {
+
+        font-size: 36px;
+
+    }
+
+
+    .welcome > span {
+
+        font-size: 19px;
+
+    }
+
+}
